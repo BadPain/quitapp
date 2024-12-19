@@ -1,8 +1,8 @@
 let currentQuestion = 0;
 let rightQuestions = 0;
-let AUDIO_WIN = new Audio('/sounds/ende.mp3');
-let AUDIO_RIGHT = new Audio('/sounds/smw_coin.wav');
-let AUDIO_WRONG = new Audio('/sounds/fail.mp3');
+let AUDIO_WIN = new Audio('./sounds/ende.mp3');
+let AUDIO_RIGHT = new Audio('./sounds/smw_coin.wav');
+let AUDIO_WRONG = new Audio('./sounds/fail.mp3');
 
 function init() {
     totalQuestions()
@@ -102,4 +102,3 @@ function showNextQuestion() {
     document.getElementById('answer_3').innerHTML = question['answer_3'];
     document.getElementById('answer_4').innerHTML = question['answer_4'];
 }
-
